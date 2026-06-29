@@ -24,7 +24,7 @@
       gate_tagline: 'California\'s Dedicated Medi-Cal & Specialized Institutional Pharmacy Hub.',
       gate_sub: 'Choose your portal experience below to access direct care coordination and statewide fulfillment.',
       gate_patient_title: 'I am a Patient or Family Member',
-      gate_patient_sub: 'Free statewide home delivery on all covered medications, formulas, and supplies. Emergency local pickup available.',
+      gate_patient_sub: 'Get your medications and supplies delivered straight to your door—100% covered by insurance. Plus, local emergency pickup is always here if you need it.',
       gate_pro_title: 'I am a Healthcare Professional',
       gate_pro_sub: 'Access Delta Connect to submit referrals, bypass administrative paperwork, and track clinical status.',
       gate_partner_title: 'I am a Referral Partner',
@@ -55,14 +55,14 @@
       trust_since: 'Serving California Since 1998',
 
       patient_hero_title: 'Your Health. Our Care. Delivered.',
-      patient_bullet_1: 'Your doctor refers you',
-      patient_bullet_2: 'We handle your insurance',
-      patient_bullet_3: 'Supplies arrive at your door',
+      patient_bullet_1: '100% Covered by Medi-Cal, L.A. Care, & Medicare — zero surprise costs.',
+      patient_bullet_2: 'We handle all the doctor paperwork and state approvals for you.',
+      patient_bullet_3: 'Free same-day local delivery or overnight shipping across California.',
       patient_cta: 'Get Started Today',
 
       steps_title: 'Healthcare. Made Simple.',
       step1_title: 'Get a Referral',
-      step1_text: 'Your doctor or specialist writes a referral for the products you need',
+      step1_text: 'Ask your doctor to send your prescription or referral directly to Delta Drugs. Don\'t have a referral yet? Click "Get Started" and our care team will coordinate with your doctor\'s office directly.',
       step2_title: 'We Call You',
       step2_text: 'Our team calls you within 24 hours, verifies your insurance, and confirms your order — at no cost to you',
       step3_title: 'Delivered Free',
@@ -70,7 +70,7 @@
       steps_cta: 'Have questions? Call us anytime — <a href="tel:8183092884">real people answer</a>',
 
       about_title: 'One of California\'s Most Trusted Healthcare Suppliers',
-      about_p1: 'Delta Drugs has been helping families across California for over 25 years. We are a Medicare and Medi-Cal approved vendor accepting all major insurance plans.',
+      about_p1: 'Delta Drugs has been a trusted lifeline for California families since 1998. While our advanced logistics network allows us to overnight care packages to the most remote corners of the state, our roots remain deeply local—providing seamless support to our neighbors in Glendale, Los Angeles, Burbank, and the surrounding communities.',
       about_p2: 'Serving Glendale, Los Angeles, Burbank, Pasadena, the San Fernando Valley, and communities throughout California.',
 
       services_title: 'What We Provide',
@@ -91,7 +91,7 @@
       insurance_title: 'We Accept Your Insurance',
       insurance_text: 'We are a proud Medicare and Medi-Cal approved vendor accepting all major insurance plans — we handle the billing so you don\'t have to.',
       insurance_note: 'Don\'t see your plan? Call us — we work with most major California insurance plans.',
-      insurance_btn: 'Verify My Insurance',
+      insurance_btn: 'Check My Coverage',
 
       testimonials_title: 'What Our Patients Say',
       testimonial_1: 'Delta Drugs made everything so easy. They handled my insurance, called me to confirm everything, and my supplies arrived within days. I couldn\'t believe how simple it was.',
@@ -216,7 +216,7 @@
       gate_tagline: 'Centro Dedicado de Farmacia Medi-Cal e Institucional Especializada de California.',
       gate_sub: 'Elige tu portal abajo para coordinar tu cuidado directo y recibir en todo el estado.',
       gate_patient_title: 'Soy Paciente o Familiar',
-      gate_patient_sub: 'Entrega gratis a todo California en medicamentos, fórmulas y suministros cubiertos. Recogida local de emergencia disponible.',
+      gate_patient_sub: 'Recibe tus medicamentos y productos directo en tu puerta—100% cubierto por tu seguro. Además, recogida local de emergencia siempre disponible.',
       gate_pro_title: 'Soy Profesional de Salud',
       gate_pro_sub: 'Entra a Delta Connect para mandar referidos, saltarte el papeleo, y darle seguimiento clínico.',
       gate_partner_title: 'Soy Socio de Referidos',
@@ -247,14 +247,14 @@
       trust_since: 'Sirviendo California Desde 1998',
 
       patient_hero_title: 'Tu Salud. Nuestro Cuidado. Entregado.',
-      patient_bullet_1: 'Tu doctor te refiere',
-      patient_bullet_2: 'Nosotros manejamos tu seguro',
-      patient_bullet_3: 'Tus productos llegan a tu casa',
+      patient_bullet_1: '100% Cubierto por Medi-Cal, L.A. Care y Medicare — sin costos inesperados.',
+      patient_bullet_2: 'Nosotros manejamos todo el papeleo del doctor y las aprobaciones del estado por ti.',
+      patient_bullet_3: 'Entrega local el mismo día o envío nocturno a todo California, gratis.',
       patient_cta: 'Empieza Hoy',
 
       steps_title: '¿Cómo Funciona? Es Muy Fácil.',
       step1_title: 'Obtén un Referido',
-      step1_text: 'Tu doctor o especialista escribe un referido para los productos que necesitas',
+      step1_text: 'Pídele a tu doctor que mande tu receta o referido directamente a Delta Drugs. ¿No tienes referido? Haz clic en "Empezar" y nuestro equipo se coordina con el consultorio de tu doctor.',
       step2_title: 'Te Llamamos Nosotros',
       step2_text: 'Nuestro equipo te llama dentro de 24 horas, verifica tu seguro y confirma tu pedido — sin costo para ti',
       step3_title: 'Entrega Gratis',
@@ -262,7 +262,7 @@
       steps_cta: '¿Tienes dudas? Llámanos cuando quieras — <a href="tel:8183092884">siempre contestamos en español</a>',
 
       about_title: 'Uno de los Proveedores de Salud Más Confiables de California',
-      about_p1: 'Delta Drugs lleva más de 25 años ayudando a familias en toda California. Somos proveedores aprobados de Medicare y Medi-Cal y aceptamos todos los seguros principales.',
+      about_p1: 'Delta Drugs ha sido un apoyo de confianza para las familias de California desde 1998. Nuestra red logística nos permite enviar paquetes de cuidado a los rincones más remotos del estado, pero nuestras raíces son locales—apoyando a nuestros vecinos en Glendale, Los Ángeles, Burbank y las comunidades cercanas.',
       about_p2: 'Sirviendo a Glendale, Los Ángeles, Burbank, Pasadena, el Valle de San Fernando y comunidades en toda California.',
 
       services_title: 'Lo Que Ofrecemos',
@@ -283,7 +283,7 @@
       insurance_title: 'Aceptamos Tu Seguro',
       insurance_text: 'Somos proveedores aprobados de Medicare y Medi-Cal y aceptamos todos los seguros principales — nosotros nos encargamos de todo el papeleo',
       insurance_note: '¿No ves tu seguro? Llámanos — trabajamos con la mayoría de los seguros de California',
-      insurance_btn: 'Verificar Mi Seguro',
+      insurance_btn: 'Verificar Mi Cobertura',
 
       testimonials_title: 'Lo Que Dicen Nuestros Pacientes',
       testimonial_1: 'Delta Drugs hizo todo facilísimo. Se encargaron de mi seguro, me llamaron para confirmar, y mis productos llegaron en días. No lo podía creer.',
