@@ -1,0 +1,195 @@
+/* California branding, workflow illustration, partner hero */
+.header-phone-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.15rem;
+}
+
+.ca-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: linear-gradient(135deg, var(--orange), #e07015);
+  color: var(--white);
+  font-family: var(--font-heading);
+  font-size: 0.6875rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.625rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.hero-california-tag {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 0.75rem;
+}
+
+.hero .hero-california-tag { color: var(--orange); }
+.page-hero .hero-california-tag { color: rgba(255,255,255,0.9); }
+
+.hero-cities {
+  font-size: 0.9375rem;
+  opacity: 0.88;
+  margin-top: 0.5rem;
+  max-width: 560px;
+}
+
+.hero--split .hero-cities { color: rgba(255,255,255,0.85); margin-left: 0; margin-right: auto; }
+
+.spanish-callout {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--orange);
+  margin-top: 0.25rem;
+}
+
+.top-bar__lang button.is-active {
+  color: var(--white);
+  background: rgba(245, 131, 38, 0.35);
+  font-weight: 800;
+}
+
+/* Pro workflow illustration */
+.pro-workflow-wrap {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.04);
+  overflow-x: auto;
+}
+
+.pro-workflow-svg {
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+}
+
+.workflow-stage {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.pro-workflow-wrap.is-visible .workflow-stage {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.pro-workflow-wrap.is-visible .workflow-stage-1 { transition-delay: 0ms; }
+.pro-workflow-wrap.is-visible .workflow-stage-2 { transition-delay: 300ms; }
+.pro-workflow-wrap.is-visible .workflow-stage-3 { transition-delay: 600ms; }
+.pro-workflow-wrap.is-visible .workflow-stage-4 { transition-delay: 900ms; }
+.pro-workflow-wrap.is-visible .workflow-stage-5 { transition-delay: 1200ms; }
+
+/* Partner hero */
+.partner-hero-left {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  overflow: hidden;
+}
+
+.partner-hero-left .hero-gradient-bg--partner { z-index: 0; }
+
+.ca-watermark {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.12;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.ca-watermark svg {
+  width: min(80%, 420px);
+  height: auto;
+  fill: white;
+}
+
+.partner-hero-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  max-width: 520px;
+}
+
+.partner-hero-right {
+  background: var(--white);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.partner-flow-svg {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+}
+
+/* About CA outline */
+.about-ca-deco {
+  position: absolute;
+  right: -2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.08;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.about-ca-deco svg { width: 200px; height: auto; fill: var(--olive); }
+
+.about-grid { position: relative; }
+
+/* Gate background images */
+.gate-panel__bg-image {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.gate-panel__bg-image--pro {
+  background-image: url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80');
+}
+
+.gate-panel__bg-image--partner {
+  background-image: url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1200&q=80');
+}
+
+.gate__header .ca-badge {
+  margin-top: 0.75rem;
+}
+
+@media (max-width: 900px) {
+  .pro-workflow-wrap { padding: 1rem; }
+  .partner-hero-left, .partner-hero-right { min-height: auto; padding: 2rem 1.5rem; }
+}

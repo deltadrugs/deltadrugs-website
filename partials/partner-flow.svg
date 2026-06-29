@@ -1,0 +1,40 @@
+<svg class="partner-flow-svg" viewBox="0 0 480 520" xmlns="http://www.w3.org/2000/svg" aria-label="Hospital to patient delivery flow">
+  <defs>
+    <marker id="p-arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#F58326"/></marker>
+  </defs>
+  <!-- Hospital -->
+  <g transform="translate(160, 20)">
+    <rect x="0" y="40" width="160" height="100" rx="6" fill="#F5F5F5" stroke="#757561" stroke-width="2"/>
+    <rect x="20" y="60" width="30" height="25" fill="#fff" stroke="#757561"/>
+    <rect x="65" y="60" width="30" height="25" fill="#fff" stroke="#757561"/>
+    <rect x="110" y="60" width="30" height="25" fill="#fff" stroke="#757561"/>
+    <rect x="70" y="0" width="20" height="40" fill="#757561"/>
+    <rect x="55" y="15" width="50" height="12" rx="2" fill="#F58326"/>
+    <text x="80" y="165" text-anchor="middle" fill="#757561" font-family="sans-serif" font-size="13" font-weight="700">Hospital / WIC</text>
+  </g>
+  <!-- Flow line 1 -->
+  <path d="M240 180 Q240 230 240 250" fill="none" stroke="#F58326" stroke-width="2.5" marker-end="url(#p-arrow)"/>
+  <!-- Intake desk -->
+  <g transform="translate(130, 260)">
+    <rect x="0" y="30" width="220" height="70" rx="8" fill="#fff" stroke="#757561" stroke-width="2"/>
+    <rect x="15" y="45" width="80" height="45" rx="4" fill="#F5F5F5" stroke="#757561"/>
+    <circle cx="170" cy="55" r="16" fill="#D4A574"/>
+    <path d="M152 78 Q170 62 188 78 L188 100 L152 100 Z" fill="#757561"/>
+    <rect x="60" y="0" width="100" height="22" rx="11" fill="#F58326"/>
+    <text x="110" y="15" text-anchor="middle" fill="#fff" font-size="10" font-weight="700" font-family="sans-serif">Delta Drugs Intake</text>
+    <text x="110" y="125" text-anchor="middle" fill="#757561" font-family="sans-serif" font-size="13" font-weight="700">Referral &amp; Verification</text>
+  </g>
+  <!-- Flow line 2 -->
+  <path d="M240 390 Q240 420 240 440" fill="none" stroke="#F58326" stroke-width="2.5" marker-end="url(#p-arrow)"/>
+  <!-- Patient home -->
+  <g transform="translate(150, 450)">
+    <rect x="0" y="30" width="180" height="55" fill="#E8DDD0" stroke="#757561"/>
+    <polygon points="0,30 90,0 180,30" fill="#C4B5A0" stroke="#757561"/>
+    <rect x="75" y="50" width="30" height="35" fill="#757561"/>
+    <circle cx="50" cy="55" r="12" fill="#D4A574"/>
+    <path d="M38 72 Q50 62 62 72 L62 85 L38 85 Z" fill="#757561"/>
+    <rect x="120" y="48" width="35" height="28" rx="3" fill="#757561"/>
+    <text x="137" y="66" text-anchor="middle" fill="#fff" font-size="8" font-family="sans-serif">DD</text>
+    <text x="90" y="110" text-anchor="middle" fill="#757561" font-family="sans-serif" font-size="13" font-weight="700">Delivered to Patient</text>
+  </g>
+</svg>

@@ -1,0 +1,35 @@
+<svg viewBox="0 0 560 420" xmlns="http://www.w3.org/2000/svg" aria-label="Home delivery illustration">
+  <!-- Room background -->
+  <rect width="560" height="420" fill="#F8F8F6" rx="16"/>
+  <rect x="40" y="280" width="480" height="8" fill="#E8E8E4"/>
+  <!-- Window -->
+  <rect x="380" y="60" width="120" height="100" rx="4" fill="#FFF" stroke="#E8E8E4" stroke-width="2"/>
+  <line x1="440" y1="60" x2="440" y2="160" stroke="#E8E8E4" stroke-width="2"/>
+  <line x1="380" y1="110" x2="500" y2="110" stroke="#E8E8E4" stroke-width="2"/>
+  <!-- Sofa -->
+  <rect x="60" y="220" width="180" height="70" rx="12" fill="#E8E8E4"/>
+  <rect x="70" y="200" width="160" height="30" rx="8" fill="#D8D8D4"/>
+  <!-- Elderly woman on sofa -->
+  <circle cx="150" cy="185" r="22" fill="#D4A574"/>
+  <path d="M125 215 Q150 195 175 215 L178 260 L122 260 Z" fill="#757561"/>
+  <!-- Door area -->
+  <rect x="300" y="120" width="100" height="168" fill="#FFF" stroke="#E8E8E4" stroke-width="2"/>
+  <circle cx="385" cy="210" r="4" fill="#F58326"/>
+  <!-- Delivery person -->
+  <circle cx="340" cy="155" r="18" fill="#D4A574"/>
+  <path d="M318 180 Q340 165 362 180 L365 250 L315 250 Z" fill="#F58326"/>
+  <!-- Box -->
+  <rect x="355" y="200" width="50" height="40" rx="4" fill="#FFF" stroke="#757561" stroke-width="1.5"/>
+  <rect x="360" y="205" width="40" height="8" fill="#F58326" rx="2"/>
+  <text x="380" y="212" text-anchor="middle" fill="#fff" font-size="5" font-family="sans-serif" font-weight="700">DD</text>
+  <!-- Phone confirmation -->
+  <rect x="80" y="130" width="70" height="120" rx="10" fill="#FFF" stroke="#757561" stroke-width="1.5"/>
+  <rect x="88" y="145" width="54" height="80" rx="4" fill="#F8F8F6"/>
+  <circle cx="115" cy="240" r="6" fill="#E8E8E4"/>
+  <rect x="95" y="160" width="40" height="6" rx="2" fill="#F58326"/>
+  <path d="M100 180 L115 195 L130 170" fill="none" stroke="#F58326" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="115" y="215" text-anchor="middle" fill="#757561" font-size="7" font-family="sans-serif">Confirmed!</text>
+  <!-- Warm accent plants -->
+  <ellipse cx="250" cy="275" rx="20" ry="8" fill="#E8E8E4"/>
+  <path d="M250 240 Q245 260 250 275 Q255 260 250 240" fill="#757561" opacity="0.4"/>
+</svg>

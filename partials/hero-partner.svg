@@ -1,0 +1,40 @@
+<svg viewBox="0 0 520 400" xmlns="http://www.w3.org/2000/svg" aria-label="Partner referral flow">
+  <rect width="520" height="400" fill="#F8F8F6" rx="12"/>
+  <!-- Hospital -->
+  <g transform="translate(40, 80)">
+    <rect x="0" y="40" width="100" height="80" rx="4" fill="#FFF" stroke="#757561" stroke-width="1.5"/>
+    <rect x="15" y="55" width="20" height="18" fill="#F8F8F6" stroke="#E8E8E4"/>
+    <rect x="45" y="55" width="20" height="18" fill="#F8F8F6" stroke="#E8E8E4"/>
+    <rect x="75" y="55" width="15" height="18" fill="#F8F8F6" stroke="#E8E8E4"/>
+    <rect x="42" y="0" width="16" height="40" fill="#757561"/>
+    <rect x="30" y="12" width="40" height="10" rx="2" fill="#F58326"/>
+    <text x="50" y="140" text-anchor="middle" fill="#757561" font-size="10" font-weight="700" font-family="sans-serif">Hospital</text>
+  </g>
+  <!-- Flow line 1 -->
+  <path d="M150 150 Q200 150 220 150" fill="none" stroke="#F58326" stroke-width="2.5" marker-end="url(#arr)"/>
+  <defs><marker id="arr" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#F58326"/></marker></defs>
+  <!-- Intake desk -->
+  <g transform="translate(220, 100)">
+    <rect x="0" y="30" width="120" height="50" rx="6" fill="#FFF" stroke="#757561"/>
+    <rect x="10" y="42" width="45" height="30" rx="3" fill="#F8F8F6" stroke="#E8E8E4"/>
+    <circle cx="95" cy="48" r="14" fill="#D4A574"/>
+    <path d="M82 65 Q95 52 108 65 L108 80 L82 80 Z" fill="#757561"/>
+    <rect x="88" y="38" width="14" height="4" rx="2" fill="#333"/>
+    <rect x="20" y="0" width="80" height="18" rx="9" fill="#F58326"/>
+    <text x="60" y="12" text-anchor="middle" fill="#fff" font-size="8" font-weight="700" font-family="sans-serif">Delta Drugs</text>
+    <text x="60" y="100" text-anchor="middle" fill="#757561" font-size="10" font-weight="700" font-family="sans-serif">Intake</text>
+  </g>
+  <!-- Flow line 2 -->
+  <path d="M350 150 Q400 150 420 150" fill="none" stroke="#F58326" stroke-width="2.5" marker-end="url(#arr)"/>
+  <!-- Patient home -->
+  <g transform="translate(420, 110)">
+    <rect x="0" y="40" width="70" height="45" fill="#E8E8E4" stroke="#757561"/>
+    <polygon points="0,40 35,15 70,40" fill="#D8D8D4" stroke="#757561"/>
+    <rect x="28" y="55" width="14" height="30" fill="#757561"/>
+    <circle cx="20" cy="50" r="10" fill="#D4A574"/>
+    <path d="M10 65 Q20 55 30 65 L30 75 L10 75 Z" fill="#757561"/>
+    <rect x="50" y="48" width="22" height="18" rx="2" fill="#757561"/>
+    <text x="61" y="60" text-anchor="middle" fill="#fff" font-size="6" font-family="sans-serif">DD</text>
+    <text x="35" y="105" text-anchor="middle" fill="#757561" font-size="10" font-weight="700" font-family="sans-serif">Patient</text>
+  </g>
+</svg>
