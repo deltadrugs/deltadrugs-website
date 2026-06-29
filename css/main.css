@@ -451,13 +451,11 @@ h3 { font-size: 1.25rem; }
 
 .about-grid p { color: var(--olive); }
 
-.ca-outline-deco {
-  width: 120px;
-  height: auto;
+.trust-seal {
+  width: 180px;
+  height: 180px;
   margin-bottom: 1.5rem;
-  stroke: var(--orange);
-  fill: none;
-  stroke-width: 1.5;
+  display: block;
 }
 
 /* Steps */
