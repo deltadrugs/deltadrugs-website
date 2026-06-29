@@ -149,6 +149,91 @@
 
 .gate__switch:hover { color: var(--orange); }
 
+/* Gate trust strip & stats (index only) */
+.gate-trust-strip {
+  background: #F8F8F6;
+  padding: 20px 1.5rem;
+  width: 100%;
+}
+
+.gate-trust-strip__row {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.gate-trust-dot--orange { background: #F58326; }
+.gate-trust-dot--dark { background: #3d3d2e; }
+
+.gate-numbers {
+  background: var(--white);
+  padding: 40px 1.5rem;
+  width: 100%;
+}
+
+.gate-numbers__grid {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.gate-numbers__col {
+  flex: 1;
+  text-align: center;
+  padding: 0 2rem;
+  position: relative;
+}
+
+.gate-numbers__col:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 10%;
+  height: 80%;
+  width: 1px;
+  background: #F58326;
+}
+
+.gate-numbers__stat {
+  font-family: var(--font-heading);
+  font-size: 32px;
+  font-weight: 900;
+  color: #F58326;
+  line-height: 1.2;
+}
+
+.gate-numbers__desc {
+  font-size: 14px;
+  color: #757561;
+  margin-top: 0.5rem;
+  line-height: 1.45;
+}
+
+@media (max-width: 768px) {
+  .gate-trust-strip__row {
+    max-width: 420px;
+  }
+
+  .gate-numbers__grid {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .gate-numbers__col {
+    padding: 0 0 2rem;
+  }
+
+  .gate-numbers__col:not(:last-child)::after {
+    display: none;
+  }
+
+  .gate-numbers__col:not(:last-child) {
+    border-bottom: 1px solid #F58326;
+    margin-bottom: 2rem;
+  }
+}
+
 @media (max-width: 900px) {
   .gate__panels {
     grid-template-columns: 1fr;

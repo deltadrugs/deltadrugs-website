@@ -48,6 +48,12 @@
   stroke-dashoffset: 1;
 }
 
+/* Circles as path arcs animate reliably; raw SVG circles need paths instead */
+.wb-anim circle.wb-draw {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+}
+
 .wb-anim .wb-scene {
   opacity: 0;
   animation-duration: 10s;
