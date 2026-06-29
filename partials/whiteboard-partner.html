@@ -1,51 +1,107 @@
 <div class="wb-wrap wb-anim wb-partner" id="wb-partner-wrap">
-<svg class="wb-svg" viewBox="0 0 520 380" xmlns="http://www.w3.org/2000/svg" aria-label="Whiteboard animation: WIC to Delta Drugs to patient home">
-  <rect width="520" height="380" fill="#fff"/>
+<svg class="wb-svg" viewBox="0 0 580 420" xmlns="http://www.w3.org/2000/svg" aria-label="Partner story: from WIC office to statewide delivery">
+  <rect width="580" height="420" fill="#fff"/>
 
-  <!-- Scene 1: WIC office 0-2s -->
+  <!-- Scene 1 (0–2s): WIC/Hospital with waiting line -->
   <g class="wb-scene wb-scene-1">
-    <path class="wb-sketch wb-draw pa-d1" pathLength="100" d="M60,200 Q58,195 65,192 L140,188 Q148,187 150,195 L155,270 Q156,278 148,280 L68,285 Q60,286 60,278 Z"/>
-    <path class="wb-sketch wb-draw pa-d1" pathLength="100" d="M75,210 L90,210 L90,225 L75,225 Z M105,210 L120,210 L120,225 L105,225 Z M135,210 L145,210 L145,225 L135,225 Z"/>
-    <path class="wb-sketch wb-draw pa-d1" pathLength="100" d="M95,175 L100,155 L105,175 Z"/>
-    <text class="wb-text" x="72" y="305" font-size="13">WIC Office</text>
-  </g>
-
-  <!-- Scene 2: Arrow to Delta Drugs 2-4s -->
-  <g class="wb-scene wb-scene-2">
-    <path class="wb-sketch--accent wb-draw pa-arrow1" pathLength="100" stroke-dasharray="6 4" d="M165,235 Q240,220 310,235"/>
-    <path class="wb-sketch--accent" d="M305,230 L315,235 L305,240" fill="none"/>
-    <path class="wb-sketch wb-draw pa-d2" pathLength="100" d="M310,210 Q308,205 318,202 L400,198 Q410,197 412,205 L418,265 Q419,273 410,275 L320,280 Q310,281 310,272 Z"/>
-    <circle class="wb-sketch wb-draw pa-d2" pathLength="100" cx="365" cy="225" r="12"/>
-    <path class="wb-sketch wb-draw pa-d2" pathLength="100" d="M350,242 Q365,228 380,242 L382,268 L348,270 Z"/>
-    <path class="wb-sketch" d="M358,218 Q365,212 372,218" fill="none" stroke="#333" stroke-width="1.5"/>
-    <path class="wb-sketch--accent wb-draw pa-d2" pathLength="100" d="M375,215 Q390,208 398,218"/>
-    <text class="wb-text wb-text--accent" x="325" y="300" font-size="12">Delta Drugs Intake</text>
-  </g>
-
-  <!-- Scene 3: Arrow to patient home 4-6s -->
-  <g class="wb-scene wb-scene-3">
-    <path class="wb-sketch--accent wb-draw pa-arrow2" pathLength="100" stroke-dasharray="6 4" d="M425,240 Q460,250 490,270"/>
-    <path class="wb-sketch--accent" d="M485,265 L495,270 L485,275" fill="none"/>
-    <path class="wb-sketch wb-draw pa-d3" pathLength="100" d="M400,255 L460,220 L520,255 L520,310 L400,310 Z"/>
-    <rect class="wb-sketch" x="445" y="275" width="16" height="35" fill="none" stroke="#3d3d2e" stroke-width="2"/>
-    <circle class="wb-sketch" cx="475" cy="290" r="10" fill="none" stroke="#3d3d2e" stroke-width="2"/>
-    <path class="wb-sketch" d="M468,305 L482,305 L482,322 L468,322 Z" fill="none"/>
-    <path class="wb-sketch--accent wb-draw pa-d3" pathLength="100" d="M455,278 L470,293 L495,265"/>
-    <text class="wb-text" x="420" y="340" font-size="11">Patient home ✓</text>
-  </g>
-
-  <!-- Scene 4: Message 6-8s -->
-  <g class="wb-scene wb-scene-4">
-    <text class="wb-text wb-text--lg pa-label" x="260" y="170" text-anchor="middle">We connect your clients</text>
-    <text class="wb-text wb-text--accent pa-label" x="260" y="205" text-anchor="middle" font-size="16">to the care they need</text>
-    <path class="wb-sketch--thin wb-sketch--accent" d="M100,250 Q260,230 420,250" fill="none" stroke-dasharray="4 4"/>
-    <g opacity="0.6">
-      <text class="wb-text" x="80" y="280" font-size="11">WIC</text>
-      <text class="wb-text" x="200" y="280" font-size="11">Hospitals</text>
-      <text class="wb-text" x="320" y="280" font-size="11">County Health</text>
-      <text class="wb-text" x="420" y="280" font-size="11">Clinics</text>
+    <!-- Building -->
+    <path class="wb-sketch wb-draw pa-s1-a" pathLength="1" d="M70,280 Q68,200 95,175 L195,165 Q215,163 225,185 L235,280 Q237,300 215,305 L85,315 Q65,317 70,295 Z"/>
+    <path class="wb-sketch wb-draw pa-s1-b" pathLength="1" d="M95,195 L115,195 L115,215 L95,215 Z M130,195 L150,195 L150,215 L130,215 Z M165,195 L185,195 L185,215 L165,215 Z"/>
+    <path class="wb-sketch wb-draw pa-s1-b" pathLength="1" d="M105,165 L115,145 L125,165 Z"/>
+    <text class="wb-text wb-text--md" x="145" y="250" text-anchor="middle">WIC Office</text>
+    <!-- Stressed staff inside -->
+    <circle class="wb-sketch wb-draw pa-s1-c" pathLength="1" cx="155" cy="235" r="18"/>
+    <path class="wb-sketch wb-draw pa-s1-c" pathLength="1" d="M138,255 Q155,245 172,255 L178,290 L132,292 Z"/>
+    <path class="wb-sketch wb-draw pa-s1-d" pathLength="1" d="M148,242 Q155,248 162,242"/>
+    <path class="wb-sketch wb-draw pa-s1-d" pathLength="1" d="M145,218 Q150,208 158,212"/>
+    <!-- Waiting patients (line) -->
+    <g>
+      <circle class="wb-sketch wb-draw pa-s1-d" pathLength="1" cx="280" cy="265" r="14"/>
+      <path class="wb-sketch wb-draw pa-s1-d" pathLength="1" d="M268,282 L268,325 M292,282 L292,325"/>
+      <path class="wb-sketch wb-draw pa-s1-e" pathLength="1" d="M262,275 L278,268 L294,275 L294,295 L262,295 Z"/>
     </g>
+    <g>
+      <circle class="wb-sketch wb-draw pa-s1-e" pathLength="1" cx="340" cy="268" r="14"/>
+      <path class="wb-sketch wb-draw pa-s1-e" pathLength="1" d="M328,285 L328,328 M352,285 L352,328"/>
+      <path class="wb-sketch wb-draw pa-s1-e" pathLength="1" d="M322,278 L338,271 L354,278 L354,298 L322,298 Z"/>
+    </g>
+    <g>
+      <circle class="wb-sketch wb-draw pa-s1-e" pathLength="1" cx="400" cy="270" r="14"/>
+      <path class="wb-sketch wb-draw pa-s1-e" pathLength="1" d="M388,287 L388,330 M412,287 L412,330"/>
+      <path class="wb-sketch wb-draw pa-s1-e" pathLength="1" d="M382,280 L398,273 L414,280 L414,300 L382,300 Z"/>
+    </g>
+    <text class="wb-text wb-text--md wb-fade pa-s1-t" x="290" y="48" text-anchor="middle">Busy referral partners...</text>
+  </g>
+
+  <!-- Scene 2 (2–4s): Arrow to Delta Drugs -->
+  <g class="wb-scene wb-scene-2">
+    <path class="wb-sketch wb-draw pa-s2-a" pathLength="1" d="M70,280 Q68,200 95,175 L195,165 Q215,163 225,185 L235,280 Q237,300 215,305 L85,315 Q65,317 70,295 Z"/>
+    <text class="wb-text wb-text--sm" x="145" y="250" text-anchor="middle">WIC Office</text>
+    <!-- Arrow -->
+    <path class="wb-sketch--accent wb-draw pa-s2-b" pathLength="1" d="M245,240 Q320,220 395,235"/>
+    <path class="wb-sketch--accent wb-draw pa-s2-b" pathLength="1" d="M385,228 L400,235 L385,242"/>
+    <!-- Delta Drugs logo block -->
+    <path class="wb-sketch wb-draw pa-s2-c" pathLength="1" d="M410,195 Q408,185 425,182 L520,175 Q535,174 540,188 L548,265 Q550,280 532,283 L418,292 Q400,293 410,272 Z"/>
+    <text class="wb-text wb-text--lg wb-text--accent" x="478" y="235" text-anchor="middle">Delta Drugs</text>
+    <text class="wb-text wb-text--md wb-text--accent wb-fade pa-s2-t" x="290" y="48" text-anchor="middle">One referral to Delta Drugs</text>
+  </g>
+
+  <!-- Scene 3 (4–6s): Intake process -->
+  <g class="wb-scene wb-scene-3">
+    <path class="wb-sketch wb-draw pa-s3-a" pathLength="1" d="M120,300 Q118,288 138,285 L460,275 Q478,274 485,288 L492,345 Q494,360 475,363 L128,372 Q110,373 120,352 Z"/>
+    <!-- Operator -->
+    <circle class="wb-sketch wb-draw pa-s3-b" pathLength="1" cx="290" cy="195" r="26"/>
+    <path class="wb-sketch wb-draw pa-s3-b" pathLength="1" d="M258,225 Q290,208 322,225 L330,290 L250,295 Z"/>
+    <path class="wb-sketch--accent wb-draw pa-s3-c" pathLength="1" d="M262,195 Q255,175 290,168 Q325,175 318,195"/>
+    <path class="wb-sketch--accent wb-draw pa-s3-c" pathLength="1" d="M262,195 L252,215 M318,195 L328,215"/>
+    <!-- Insurance check -->
+    <path class="wb-sketch wb-draw pa-s3-d" pathLength="1" d="M380,210 L480,205"/>
+    <text class="wb-text wb-text--md" x="395" y="200">Insurance verified</text>
+    <path class="wb-sketch--accent wb-pop pa-s3-ck" pathLength="1" d="M495,195 L508,210 L535,178"/>
+    <!-- Order processing -->
+    <path class="wb-sketch wb-draw pa-s3-d" pathLength="1" d="M380,250 L450,246"/>
+    <path class="wb-sketch wb-draw pa-s3-d" pathLength="1" d="M380,275 L420,272"/>
+    <text class="wb-text wb-text--md wb-text--accent" x="395" y="268">Order processing...</text>
+  </g>
+
+  <!-- Scene 4 (6–8s): California map + deliveries -->
+  <g class="wb-scene wb-scene-4">
+    <!-- California outline (subtle) -->
+    <path class="wb-sketch pa-s4-ca" pathLength="1" opacity="0.15" d="M180,120 L200,115 L225,95 L255,85 L290,78 L325,82 L355,95 L375,115 L385,140 L390,165 L392,195 L388,225 L378,255 L360,280 L335,300 L300,315 L265,322 L230,320 L200,310 L175,290 L165,260 L160,230 L165,200 L172,165 Z"/>
+    <!-- Houses -->
+    <path class="wb-sketch wb-draw pa-s4-a" pathLength="1" d="M120,280 L155,250 L190,280 L190,330 L120,330 Z"/>
+    <path class="wb-sketch wb-draw pa-s4-b" pathLength="1" d="M250,270 L285,240 L320,270 L320,320 L250,320 Z"/>
+    <path class="wb-sketch wb-draw pa-s4-c" pathLength="1" d="M380,285 L415,255 L450,285 L450,335 L380,335 Z"/>
+    <path class="wb-sketch wb-draw pa-s4-d" pathLength="1" d="M470,275 L505,245 L540,275 L540,325 L470,325 Z"/>
+    <!-- Delivery arrows -->
+    <path class="wb-sketch--accent wb-draw pa-s4-arr1" pathLength="1" d="M290,195 Q220,220 155,265"/>
+    <path class="wb-sketch--accent wb-draw pa-s4-arr2" pathLength="1" d="M300,195 Q285,230 285,255"/>
+    <path class="wb-sketch--accent wb-draw pa-s4-arr3" pathLength="1" d="M310,195 Q360,240 415,275"/>
+    <path class="wb-sketch--accent wb-draw pa-s4-e" pathLength="1" d="M320,195 Q400,230 505,265"/>
+    <!-- Small trucks -->
+    <path class="wb-sketch wb-draw pa-s4-e" pathLength="1" d="M200,230 L240,225 L235,215 L250,215 L258,225 L280,222 L285,245 L200,250 Z"/>
+    <path class="wb-sketch wb-draw pa-s4-e" pathLength="1" d="M340,220 L375,215 L370,205 L385,205 L392,215 L415,212 L420,235 L340,240 Z"/>
+  </g>
+
+  <!-- Scene 5 (8–10s): Relaxed staff + happy patients -->
+  <g class="wb-scene wb-scene-5">
+    <!-- Staff thumbs up -->
+    <path class="wb-sketch wb-draw pa-s5-a" pathLength="1" d="M70,280 Q68,200 95,175 L195,165 Q215,163 225,185 L235,280 Q237,300 215,305 L85,315 Q65,317 70,295 Z"/>
+    <circle class="wb-sketch wb-draw pa-s5-b" pathLength="1" cx="155" cy="235" r="18"/>
+    <path class="wb-sketch wb-draw pa-s5-b" pathLength="1" d="M138,255 Q155,245 172,255 L178,290 L132,292 Z"/>
+    <path class="wb-sketch wb-draw pa-s5-b" pathLength="1" d="M148,242 Q155,250 162,242"/>
+    <path class="wb-sketch--accent wb-pop pa-s5-thumb" pathLength="1" d="M185,265 L195,245 L200,250 L192,270 L198,275 L185,280 Z"/>
+    <!-- Happy patients at homes -->
+    <path class="wb-sketch wb-draw pa-s5-c" pathLength="1" d="M280,270 L315,240 L350,270 L350,320 L280,320 Z"/>
+    <circle class="wb-sketch wb-draw pa-s5-c" pathLength="1" cx="325" cy="295" r="14"/>
+    <path class="wb-sketch wb-draw pa-s5-c" pathLength="1" d="M314,312 L314,345 M336,312 L336,345"/>
+    <path class="wb-sketch wb-draw pa-s5-c" pathLength="1" d="M318,288 Q325,295 332,288"/>
+    <path class="wb-sketch wb-draw pa-s5-d" pathLength="1" d="M400,275 L435,245 L470,275 L470,325 L400,325 Z"/>
+    <circle class="wb-sketch wb-draw pa-s5-d" pathLength="1" cx="445" cy="300" r="14"/>
+    <path class="wb-sketch wb-draw pa-s5-d" pathLength="1" d="M434,317 L434,350 M456,317 L456,350"/>
+    <path class="wb-sketch wb-draw pa-s5-d" pathLength="1" d="M438,293 Q445,300 452,293"/>
+    <text class="wb-text wb-text--lg wb-text--accent wb-fade pa-s5-t" x="290" y="55" text-anchor="middle">Your community.</text>
+    <text class="wb-text wb-text--md wb-fade pa-s5-t" x="290" y="88" text-anchor="middle">Taken care of.</text>
   </g>
 </svg>
-<button type="button" class="wb-replay" data-wb-replay aria-label="Replay animation">↻ Replay animation</button>
 </div>
