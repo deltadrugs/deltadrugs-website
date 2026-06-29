@@ -521,6 +521,13 @@ h3 { font-size: 1.25rem; }
   font-size: 0.9375rem;
   line-height: 1.55;
   display: inline-block;
+  font-family: 'Nunito', sans-serif;
+  font-variant-ligatures: none;
+}
+
+.portal-cta__brand {
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: 0.01em;
 }
 
 .portal-cta__link:hover {

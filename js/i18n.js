@@ -174,7 +174,7 @@
       pro_dash_badge_delivered: 'Delivered ✓',
       pro_dash_badge_processing: 'Processing',
       pro_dash_tagline: 'Real-time referral tracking — available 24/7',
-      pro_portal_cta: 'Managing multiple Medi-Cal patients? Click here to request full administrative access to Delta Connect for real-time tracking and continuous batch submissions.',
+      pro_portal_cta: 'Managing multiple Medi-Cal patients? Click here to request full administrative access to <span class="portal-cta__brand">Delta Connect</span> for real-time tracking and continuous batch submissions.',
       pro_portal_cta_phone: 'Or call our provider line directly: (818) 309-2884',
 
       partner_hero_title: 'Streamlined Specialty Formula Allocation for California Agencies.',
@@ -380,7 +380,7 @@
       pro_dash_badge_delivered: 'Entregado ✓',
       pro_dash_badge_processing: 'Procesando',
       pro_dash_tagline: 'Seguimiento de referidos en tiempo real — disponible 24/7',
-      pro_portal_cta: '¿Manejando múltiples pacientes de Medi-Cal? Haz clic aquí para solicitar acceso administrativo completo a Delta Connect para seguimiento en tiempo real y envíos continuos.',
+      pro_portal_cta: '¿Manejando múltiples pacientes de Medi-Cal? Haz clic aquí para solicitar acceso administrativo completo a <span class="portal-cta__brand">Delta Connect</span> para seguimiento en tiempo real y envíos continuos.',
       pro_portal_cta_phone: 'O llámanos directamente: (818) 309-2884',
 
       partner_hero_title: 'Asignación Especializada de Fórmula Simplificada para Agencias de California.',
