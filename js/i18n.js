@@ -54,7 +54,7 @@
       trust_medicare: 'Medicare & Medi-Cal Approved',
       trust_since: 'Serving California Since 1998',
 
-      patient_hero_title: 'Your Health. Our Care. Delivered.',
+      patient_hero_title: 'California\'s Dedicated Home Delivery Pharmacy for Medications, Specialized Formulas, and Medical Supplies.',
       patient_bullet_1: '100% Covered by Medi-Cal, L.A. Care, & Medicare — zero surprise costs.',
       patient_bullet_2: 'We handle all the doctor paperwork and state approvals for you.',
       patient_bullet_3: 'Free same-day local delivery or overnight shipping across California.',
@@ -246,7 +246,7 @@
       trust_medicare: 'Aprobados por Medicare y Medi-Cal',
       trust_since: 'Sirviendo California Desde 1998',
 
-      patient_hero_title: 'Tu Salud. Nuestro Cuidado. Entregado.',
+      patient_hero_title: 'La Farmacia de Entrega a Domicilio de California para Medicamentos, Fórmulas Especializadas y Suministros Médicos.',
       patient_bullet_1: '100% Cubierto por Medi-Cal, L.A. Care y Medicare — sin costos inesperados.',
       patient_bullet_2: 'Nosotros manejamos todo el papeleo del doctor y las aprobaciones del estado por ti.',
       patient_bullet_3: 'Entrega local el mismo día o envío nocturno a todo California, gratis.',

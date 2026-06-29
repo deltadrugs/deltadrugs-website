@@ -250,6 +250,12 @@ h3 { font-size: 1.25rem; }
 
 .hero-bright__content { max-width: 520px; }
 
+.hero-bright__title {
+  font-size: clamp(1.75rem, 3.2vw, 2.2rem);
+  line-height: 1.25;
+  margin-bottom: 1rem;
+}
+
 .hero-bright__accent {
   width: 64px;
   height: 4px;
@@ -543,6 +549,11 @@ h3 { font-size: 1.25rem; }
   height: 100%;
   stroke: var(--orange);
   fill: none;
+}
+
+.service-card__icon--fill svg {
+  stroke: none;
+  fill: var(--orange);
 }
 
 .service-card h3 { margin-bottom: 0.5rem; }
