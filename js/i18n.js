@@ -155,6 +155,7 @@
       partner_bullet_1: '<strong>Direct WIC & Case Manager Pipeline:</strong> Fast, reliable processing built to help overstretched regional agencies support vulnerable families instantly.',
       partner_bullet_2: '<strong>Medi-Cal Rx Prior Authorization Experts:</strong> We eliminate the bureaucratic back-and-forth for highly specialized infant formulas and metabolic nutrition.',
       partner_bullet_3: '<strong>Overnight Doorstep Fulfillment:</strong> Heavy shipments are handled completely by us, arriving directly on the patient\'s porch anywhere in California at zero cost to the family.',
+      partner_wic_desc: 'WIC-approved supplier',
       partner_cta: 'Start a Partnership',
       partner_icon_wic: 'WIC Centers',
       partner_icon_hospital: 'Hospitals',
