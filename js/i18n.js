@@ -71,6 +71,8 @@
 
       about_title: 'One of California\'s Most Trusted Healthcare Suppliers',
       about_p1: 'Delta Drugs has been a trusted lifeline for California families since 1998. While our advanced logistics network allows us to overnight care packages to the most remote corners of the state, our roots remain deeply local—providing seamless support to our neighbors in Glendale, Los Angeles, Burbank, and the surrounding communities.',
+      credential_since: 'SINCE',
+      credential_tagline: 'Serving California Families',
       about_p2: 'Serving Glendale, Los Angeles, Burbank, Pasadena, the San Fernando Valley, and communities throughout California.',
 
       services_title: 'What We Provide',
@@ -292,6 +294,8 @@
 
       about_title: 'Uno de los Proveedores de Salud Más Confiables de California',
       about_p1: 'Delta Drugs ha sido un apoyo de confianza para las familias de California desde 1998. Nuestra red logística nos permite enviar paquetes de cuidado a los rincones más remotos del estado, pero nuestras raíces son locales—apoyando a nuestros vecinos en Glendale, Los Ángeles, Burbank y las comunidades cercanas.',
+      credential_since: 'DESDE',
+      credential_tagline: 'Sirviendo a las Familias de California',
       about_p2: 'Sirviendo a Glendale, Los Ángeles, Burbank, Pasadena, el Valle de San Fernando y comunidades en toda California.',
 
       services_title: 'Lo Que Ofrecemos',

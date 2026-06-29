@@ -668,11 +668,70 @@ h3 { font-size: 1.25rem; }
 
 .about-grid p { color: var(--olive); }
 
-.trust-seal {
-  width: 180px;
-  height: 180px;
-  margin-bottom: 1.5rem;
-  display: block;
+.about-section {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.about-section__content h2 {
+  margin-bottom: 1rem;
+}
+
+.about-section p { color: var(--olive); }
+
+.credential-badge {
+  width: 200px;
+  margin: 0 auto 2rem;
+  background: var(--white);
+  border: 2px solid #F58326;
+  border-radius: 12px;
+  padding: 20px 28px;
+  box-shadow: 0 4px 20px rgba(117, 117, 97, 0.1);
+  text-align: center;
+}
+
+.credential-badge__stars {
+  color: #F58326;
+  font-size: 14px;
+  line-height: 1;
+  margin-bottom: 0.35rem;
+}
+
+.credential-badge__since {
+  color: #757561;
+  letter-spacing: 3px;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.credential-badge__year {
+  color: #F58326;
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 1.05;
+  margin: 0.15rem 0;
+  font-family: var(--font-heading);
+}
+
+.credential-badge__rule {
+  width: 60px;
+  border: none;
+  border-top: 1px solid #F58326;
+  margin: 0.5rem auto;
+}
+
+.credential-badge__brand {
+  color: #757561;
+  letter-spacing: 3px;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.credential-badge__tagline {
+  color: #999;
+  font-size: 12px;
+  font-style: italic;
+  margin: 0.5rem 0 0;
 }
 
 /* Steps */
