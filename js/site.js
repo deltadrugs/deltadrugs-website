@@ -66,6 +66,35 @@
     });
   }
 
+  function initAudienceSwitcher() {
+    var bar = document.querySelector('.audience-switcher');
+    if (!bar) return;
+
+    var audience = localStorage.getItem(STORAGE_KEY) || document.body.dataset.audience;
+    bar.querySelectorAll('.audience-switcher__pill').forEach(function (pill) {
+      var isActive = pill.dataset.audience === audience;
+      pill.classList.toggle('is-active', isActive);
+      if (isActive) {
+        pill.setAttribute('aria-current', 'page');
+      } else {
+        pill.removeAttribute('aria-current');
+      }
+      pill.addEventListener('click', function () {
+        localStorage.setItem(STORAGE_KEY, pill.dataset.audience);
+      });
+    });
+  }
+
+  function initProductCheckboxes() {
+    document.querySelectorAll('[data-product-checkboxes]').forEach(function (group) {
+      group.querySelectorAll('input[type="checkbox"]').forEach(function (box) {
+        box.addEventListener('change', function () {
+          group.classList.remove('is-error');
+        });
+      });
+    });
+  }
+
   function initScrollReveal() {
     var els = document.querySelectorAll('.reveal:not(.is-visible)');
     if (!els.length) return;
@@ -225,18 +254,39 @@
     document.querySelectorAll('[data-ajax-form]').forEach(function (form) {
       form.addEventListener('submit', function (e) {
         e.preventDefault();
+
+        var productHidden = form.querySelector('[name="product_or_service"]');
+        if (productHidden) {
+          var checked = form.querySelectorAll('[name="product_option"]:checked');
+          var checkboxGroup = form.querySelector('[data-product-checkboxes]');
+          if (!checked.length) {
+            if (checkboxGroup) {
+              checkboxGroup.classList.add('is-error');
+              checkboxGroup.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+            return;
+          }
+          productHidden.value = Array.prototype.map.call(checked, function (box) {
+            return box.value;
+          }).join(', ');
+        }
+
         var success = form.querySelector('.form-success');
         var btn = form.querySelector('[type="submit"]');
         if (btn) {
+          if (!btn.dataset.defaultLabel) btn.dataset.defaultLabel = btn.textContent;
           btn.disabled = true;
           btn.textContent = 'Sending…';
         }
         setTimeout(function () {
           form.reset();
+          if (productHidden) productHidden.value = '';
+          var checkboxGroup = form.querySelector('[data-product-checkboxes]');
+          if (checkboxGroup) checkboxGroup.classList.remove('is-error');
           if (success) success.classList.add('is-visible');
           if (btn) {
             btn.disabled = false;
-            btn.textContent = btn.dataset.label || 'Submit';
+            btn.textContent = btn.dataset.defaultLabel || 'Submit';
           }
         }, 800);
       });
@@ -266,6 +316,11 @@
     initTestimonials();
     initForms();
     initCookieBar();
+    initAudienceSwitcher();
+    initProductCheckboxes();
+    if (window.applyLanguage && window.getLang) {
+      applyLanguage(getLang());
+    }
   }
 
   window.DeltaSiteBoot = boot;

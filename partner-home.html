@@ -14,6 +14,7 @@
 <body>
   <div id="global-widgets"></div>
   <div id="site-header"></div>
+  <div id="audience-switcher"></div>
 
   <main>
     <section class="hero-bright">
@@ -106,6 +107,7 @@
     Promise.all([
       fetch('partials/global-widgets.html').then(r=>r.text()).then(h=>{document.getElementById('global-widgets').innerHTML=h;}),
       fetch('partials/header-partner.html').then(r=>r.text()).then(h=>{document.getElementById('site-header').innerHTML=h;}),
+      fetch('partials/audience-switcher.html').then(r=>r.text()).then(h=>{document.getElementById('audience-switcher').innerHTML=h;}),
       fetch('partials/footer.html').then(r=>r.text()).then(h=>{document.getElementById('site-footer').innerHTML=h;document.getElementById('footer-year').textContent=new Date().getFullYear();}),
       fetch('partials/whiteboard-partner.html').then(r=>r.text()).then(h=>{document.getElementById('hero-whiteboard').innerHTML=h;})
     ]).then(function(){

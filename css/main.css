@@ -972,6 +972,108 @@ h3 { font-size: 1.25rem; }
   border-color: var(--orange);
 }
 
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.625rem;
+  background: #F8F8F6;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.checkbox-grid.is-error {
+  border-color: #F58326;
+  box-shadow: 0 0 0 2px rgba(245, 131, 38, 0.15);
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--olive-text);
+  cursor: pointer;
+  line-height: 1.4;
+}
+
+.checkbox-item input[type="checkbox"] {
+  accent-color: #F58326;
+  width: 16px;
+  height: 16px;
+  margin-top: 0.15rem;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.audience-switcher {
+  background: #F8F8F6;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--gray-border);
+}
+
+.audience-switcher__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.audience-switcher__inner::-webkit-scrollbar {
+  display: none;
+}
+
+.audience-switcher__label {
+  color: var(--gray-muted);
+  font-size: 13px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.audience-switcher__pills {
+  display: flex;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.audience-switcher__pill {
+  padding: 0.35rem 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+  border: 1px solid #ccc;
+  color: var(--gray-muted);
+  background: transparent;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: border-color var(--transition), color var(--transition), background var(--transition);
+}
+
+.audience-switcher__pill:hover {
+  border-color: #F58326;
+  color: #F58326;
+}
+
+.audience-switcher__pill.is-active {
+  background: #F58326;
+  border-color: #F58326;
+  color: var(--white);
+}
+
+.audience-switcher__pill.is-active:hover {
+  color: var(--white);
+}
+
+@media (max-width: 600px) {
+  .checkbox-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .form-success {
   display: none;
   margin-top: 1rem;
