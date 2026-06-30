@@ -303,42 +303,64 @@ h3 { font-size: 1.25rem; }
 }
 
 .hero-bright__visual svg,
-.hero-bright__visual img {
+.hero-bright__visual > img {
   width: 100%;
   max-width: 520px;
   height: auto;
 }
 
-.hero-placeholder {
+/* Patient home hero — CSS crossfade slideshow (7 × 4s = 28s loop) */
+.hero-slideshow {
+  position: relative;
   width: 100%;
   max-width: 580px;
   margin: 0 auto;
-  background: #F5F5F3;
-  border: 2px solid rgba(245, 131, 38, 0.4);
+  aspect-ratio: 580 / 320;
+  border: 2px solid #F58326;
   border-radius: 12px;
-  padding: 3rem 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 320px;
+  overflow: hidden;
   box-shadow: 0 4px 24px rgba(117, 117, 97, 0.06);
+  background: #F5F5F3;
 }
 
-.hero-placeholder__logo {
-  opacity: 0.6;
-  max-width: min(180px, 60%);
-  height: auto;
-  margin-bottom: 1.25rem;
+.hero-slideshow__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  opacity: 0;
+  animation-duration: 28s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
-.hero-placeholder__text {
-  font-family: 'Patrick Hand', cursive;
-  color: #757561;
-  font-size: 1.35rem;
-  text-align: center;
-  margin: 0;
-  line-height: 1.4;
+.hero-slideshow__img:nth-child(1) {
+  animation-name: hero-slideshow-fade-first;
+  animation-delay: 0s;
+}
+
+.hero-slideshow__img:nth-child(2) { animation-name: hero-slideshow-fade; animation-delay: -4s; }
+.hero-slideshow__img:nth-child(3) { animation-name: hero-slideshow-fade; animation-delay: -8s; }
+.hero-slideshow__img:nth-child(4) { animation-name: hero-slideshow-fade; animation-delay: -12s; }
+.hero-slideshow__img:nth-child(5) { animation-name: hero-slideshow-fade; animation-delay: -16s; }
+.hero-slideshow__img:nth-child(6) { animation-name: hero-slideshow-fade; animation-delay: -20s; }
+.hero-slideshow__img:nth-child(7) { animation-name: hero-slideshow-fade; animation-delay: -24s; }
+
+@keyframes hero-slideshow-fade {
+  0% { opacity: 0; }
+  5.36% { opacity: 1; }
+  8.93% { opacity: 1; }
+  14.29% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@keyframes hero-slideshow-fade-first {
+  0%, 8.93% { opacity: 1; }
+  14.29% { opacity: 0; }
+  85.71% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 /* Delta Connect dashboard preview (pro-home hero) */
