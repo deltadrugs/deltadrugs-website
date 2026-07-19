@@ -174,15 +174,19 @@
   position: absolute;
   inset: 0;
   background-size: cover;
-  background-position: center;
+  background-position: center top;
+}
+
+.gate-panel__bg-image--patient {
+  background-image: url('../Patient%20or%20CareGiver.png');
 }
 
 .gate-panel__bg-image--pro {
-  background-image: url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80');
+  background-image: url('../HealthCare%20Professional.png');
 }
 
 .gate-panel__bg-image--partner {
-  background-image: url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1200&q=80');
+  background-image: url('../WIC%20Refferal%20Partner.png');
 }
 
 .gate__header .ca-badge {

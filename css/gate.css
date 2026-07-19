@@ -71,19 +71,30 @@
   position: absolute;
   inset: 0;
   background-size: cover;
-  background-position: center;
-  opacity: 0.12;
+  background-position: center top;
   pointer-events: none;
 }
 
-.gate-panel__bg--patient { background-image: url('https://images.unsplash.com/photo-1516734212186-a967f81ad098?w=800&q=80'); }
-.gate-panel__bg--pro { background-image: url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80'); }
-.gate-panel__bg--partner { background-image: url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&q=80'); }
+.gate-panel__bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.50);
+  transition: background 0.35s ease;
+}
+
+.gate-panel__bg--patient { background-image: url('../Patient%20or%20CareGiver.png'); }
+.gate-panel__bg--pro { background-image: url('../HealthCare%20Professional.png'); }
+.gate-panel__bg--partner { background-image: url('../WIC%20Refferal%20Partner.png'); }
 
 .gate-panel:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow-md);
   border-top: 3px solid var(--orange);
+}
+
+.gate-panel:hover .gate-panel__bg::after {
+  background: rgba(255, 255, 255, 0.25);
 }
 
 .gate-panel__content {
