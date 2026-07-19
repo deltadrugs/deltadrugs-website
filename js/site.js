@@ -304,6 +304,28 @@
     });
   }
 
+  function initFaqAccordion() {
+    document.querySelectorAll('[data-faq-accordion]').forEach(function (list) {
+      if (list.dataset.bound) return;
+      list.dataset.bound = 'true';
+      list.querySelectorAll('.faq-item__q').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var item = btn.closest('.faq-item');
+          var isOpen = item.classList.contains('is-open');
+          list.querySelectorAll('.faq-item').forEach(function (el) {
+            el.classList.remove('is-open');
+            var q = el.querySelector('.faq-item__q');
+            if (q) q.setAttribute('aria-expanded', 'false');
+          });
+          if (!isOpen) {
+            item.classList.add('is-open');
+            btn.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+    });
+  }
+
   function boot() {
     initPageTransitions();
     initStickyHeader();
@@ -318,6 +340,7 @@
     initCookieBar();
     initAudienceSwitcher();
     initProductCheckboxes();
+    initFaqAccordion();
     if (window.applyLanguage && window.getLang) {
       applyLanguage(getLang());
     }
