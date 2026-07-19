@@ -79,8 +79,8 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(255, 255, 255, 0.50);
-  transition: background 0.35s ease;
+  background: rgba(255, 255, 255, 0.70);
+  transition: all 0.4s ease;
 }
 
 .gate-panel__bg--patient { background-image: url('../Patient%20or%20CareGiver.png'); }
@@ -94,7 +94,7 @@
 }
 
 .gate-panel:hover .gate-panel__bg::after {
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.35);
 }
 
 .gate-panel__content {
