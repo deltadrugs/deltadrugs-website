@@ -14,40 +14,47 @@
 
 .gate__header {
   text-align: center;
-  padding: 3rem 1.5rem 2rem;
+  padding: 1.5rem 1.5rem 1.25rem;
+}
+
+.gate__header .top-bar__lang {
+  margin-bottom: 0.75rem !important;
 }
 
 .gate__logo {
-  height: 56px;
+  height: 48px;
   width: auto;
-  margin: 0 auto 1rem;
+  margin: 0 auto 0.75rem;
 }
 
 .gate__tagline {
   font-family: var(--font-heading);
   font-weight: 900;
-  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-size: clamp(1.35rem, 2.8vw, 1.85rem);
   color: var(--olive-text);
-  margin: 0 0 0.5rem;
+  margin: 0 0 0.4rem;
   letter-spacing: -0.02em;
+  line-height: 1.25;
 }
 
 .gate__sub {
   color: var(--gray-muted);
-  font-size: 1rem;
+  font-size: 0.9375rem;
   margin: 0;
+  line-height: 1.45;
 }
 
 .gate__panels {
-  flex: 1;
+  flex: 0 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  padding: 0 1.5rem 3rem;
+  gap: 1.25rem;
+  padding: 0 1.5rem 1.5rem;
   max-width: 1100px;
   margin: 0 auto;
   width: 100%;
   align-content: start;
+  align-items: stretch;
 }
 
 .gate-panel {
@@ -56,16 +63,18 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 2.5rem 1.75rem;
+  padding: 1.5rem 1.25rem 1.25rem;
   border: none;
   cursor: pointer;
   overflow: hidden;
-  border-radius: 24px;
+  border-radius: 20px;
   background: var(--white);
   box-shadow: var(--shadow-sm);
   transition: all 0.4s ease;
   font-family: inherit;
-  height: 100%;
+  height: 340px;
+  min-height: 320px;
+  max-height: 350px;
 }
 
 .gate-panel__bg {
@@ -107,13 +116,15 @@
   flex: 1;
   width: 100%;
   height: 100%;
+  min-height: 0;
 }
 
 .gate-panel__icon {
-  width: 56px;
-  height: 56px;
-  margin: 0 auto 1.25rem;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 0.65rem;
   color: var(--orange);
+  flex-shrink: 0;
 }
 
 .gate-panel__icon svg { width: 100%; height: 100%; }
@@ -121,27 +132,32 @@
 .gate-panel__title {
   font-family: var(--font-heading);
   font-weight: 900;
-  font-size: 1.125rem;
-  margin: 0 0 0.75rem;
+  font-size: 1rem;
+  margin: 0 0 0.45rem;
   color: #ffffff;
+  line-height: 1.3;
 }
 
 .gate-panel__sub {
-  font-size: 0.9375rem;
+  font-size: 0.8125rem;
   color: #ffffff;
-  line-height: 1.55;
-  margin: 0 0 1.5rem;
+  line-height: 1.45;
+  margin: 0 0 0.75rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .gate-panel__btn {
   display: inline-flex;
-  padding: 0.625rem 1.5rem;
+  padding: 0.5rem 1.25rem;
   border: 2px solid #ffffff;
   border-radius: 8px;
   color: #ffffff;
   font-family: var(--font-heading);
   font-weight: 800;
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
   transition: all 0.4s ease;
   pointer-events: none;
   margin-top: auto;
@@ -172,7 +188,7 @@
 /* Gate trust strip & stats (index only) */
 .gate-trust-strip {
   background: #F8F8F6;
-  padding: 20px 1.5rem;
+  padding: 16px 1.5rem;
   width: 100%;
 }
 
@@ -186,7 +202,7 @@
 
 .gate-features {
   background: var(--white);
-  padding: 40px 1.5rem;
+  padding: 28px 1.5rem;
   width: 100%;
   align-self: stretch;
 }
@@ -202,7 +218,7 @@
 
 .gate-features__col {
   text-align: center;
-  padding: 1.5rem 2.5rem;
+  padding: 1rem 2rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -223,35 +239,139 @@
 
 .gate-features__head {
   font-family: var(--font-heading);
-  font-size: clamp(0.9375rem, 1.5vw, 1.125rem);
+  font-size: clamp(0.875rem, 1.5vw, 1.0625rem);
   font-weight: 900;
   color: #F58326;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  margin: 0 0 0.75rem;
+  margin: 0 0 0.5rem;
   line-height: 1.3;
 }
 
 .gate-features__sub {
-  font-size: 14px;
+  font-size: 13px;
   color: #757561;
   margin: 0;
-  line-height: 1.5;
+  line-height: 1.45;
   max-width: 280px;
 }
 
+@media (max-width: 900px) and (min-width: 769px) {
+  .gate__panels {
+    gap: 1rem;
+    padding: 0 1rem 1.25rem;
+  }
+
+  .gate-panel {
+    height: 330px;
+    padding: 1.25rem 1rem;
+  }
+
+  .gate-panel__title {
+    font-size: 0.9375rem;
+  }
+
+  .gate-panel__sub {
+    font-size: 0.75rem;
+    -webkit-line-clamp: 5;
+  }
+}
+
 @media (max-width: 768px) {
+  .gate__header {
+    padding: 1.25rem 1rem 1rem;
+  }
+
+  .gate__header .top-bar__lang {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.75rem !important;
+  }
+
+  .gate__logo {
+    height: 40px;
+    width: auto;
+    max-width: 160px;
+  }
+
+  .gate__tagline {
+    font-size: 22px;
+    line-height: 1.3;
+  }
+
+  .gate__sub {
+    font-size: 13px;
+    padding: 0 0.25rem;
+  }
+
+  .gate__panels {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    gap: 1rem;
+    padding: 0 1rem 1.25rem;
+  }
+
+  .gate-panel {
+    width: 100%;
+    height: 280px;
+    min-height: 280px;
+    max-height: 280px;
+    padding: 1.25rem 1.15rem 1.1rem;
+    border-radius: 16px;
+  }
+
+  .gate-panel__icon {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 0.5rem;
+  }
+
+  .gate-panel__title {
+    font-size: 0.9375rem;
+    margin-bottom: 0.35rem;
+  }
+
+  .gate-panel__sub {
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+    -webkit-line-clamp: 4;
+  }
+
+  .gate-panel__btn {
+    padding: 0.45rem 1.1rem;
+    font-size: 0.75rem;
+  }
+
+  .gate-trust-strip {
+    padding: 14px 1rem;
+  }
+
   .gate-trust-strip__row {
-    max-width: 420px;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.65rem 0.75rem;
+    justify-items: stretch;
+  }
+
+  .gate-trust-strip__row .trust-badge {
+    width: 100%;
+    justify-content: flex-start;
+    font-size: 0.75rem;
+    padding: 0.4rem 0.65rem;
+  }
+
+  .gate-features {
+    padding: 20px 1rem;
   }
 
   .gate-features__grid {
     grid-template-columns: 1fr;
-    max-width: 420px;
+    max-width: 100%;
   }
 
   .gate-features__col {
-    padding: 1.75rem 1rem;
+    padding: 1.25rem 0.75rem;
   }
 
   .gate-features__col:not(:last-child)::after {
@@ -260,12 +380,5 @@
 
   .gate-features__col:not(:last-child) {
     border-bottom: 1px solid rgba(245, 131, 38, 0.45);
-  }
-}
-
-@media (max-width: 900px) {
-  .gate__panels {
-    grid-template-columns: 1fr;
-    max-width: 420px;
   }
 }
