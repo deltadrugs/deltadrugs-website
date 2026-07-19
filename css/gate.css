@@ -83,6 +83,9 @@
   background-size: cover;
   background-position: center top;
   pointer-events: none;
+  transform: scale(1);
+  transform-origin: center center;
+  transition: transform 0.6s ease;
 }
 
 .gate-panel__bg::after {
@@ -98,9 +101,12 @@
 .gate-panel__bg--partner { background-image: url('../WIC%20Refferal%20Partner.png'); }
 
 .gate-panel:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-md);
-  border-top: 3px solid var(--orange);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25), 0 0 0 2px rgba(245, 131, 38, 0.6);
+}
+
+.gate-panel:hover .gate-panel__bg {
+  transform: scale(1.08);
 }
 
 .gate-panel:hover .gate-panel__bg::after {
@@ -159,15 +165,17 @@
   font-family: var(--font-heading);
   font-weight: 800;
   font-size: 0.8125rem;
-  transition: all 0.4s ease;
+  transition: all 0.3s ease;
   pointer-events: none;
   margin-top: 0;
+  transform: translateY(0);
 }
 
 .gate-panel:hover .gate-panel__btn {
-  background: #ffffff;
-  border-color: #ffffff;
-  color: var(--olive-text);
+  background: #F58326;
+  border-color: #F58326;
+  color: #ffffff;
+  transform: translateY(-4px);
 }
 
 .gate__footer {
