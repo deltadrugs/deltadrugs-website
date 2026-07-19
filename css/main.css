@@ -253,7 +253,29 @@ h3 { font-size: 1.25rem; }
 .hero-bright__title {
   font-size: clamp(1.75rem, 3.2vw, 2.2rem);
   line-height: 1.25;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
+}
+
+.hero-bright__promise {
+  position: relative;
+  margin: 1.25rem 0 1.25rem;
+  padding-top: 1rem;
+  color: #F58326;
+  font-size: 1.4rem;
+  font-weight: 800;
+  line-height: 1.35;
+  font-family: var(--font-heading);
+}
+
+.hero-bright__promise::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 2px;
+  background: #F58326;
+  border-radius: 1px;
 }
 
 .hero-bright__accent {
@@ -1426,6 +1448,7 @@ h3 { font-size: 1.25rem; }
 @media (max-width: 900px) {
   .hero-bright__grid { grid-template-columns: 1fr; }
   .hero-bright__visual { order: -1; }
+  .hero-bright__promise { font-size: 1.1rem; }
   .trust-bar__grid { grid-template-columns: 1fr 1fr; }
   .about-grid, .services-grid, .refer-options, .flip-grid, .flip-grid--5 { grid-template-columns: 1fr; }
   .flip-grid--5 .flip-card:nth-child(n) { grid-column: auto; }
