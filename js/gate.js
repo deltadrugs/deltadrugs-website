@@ -20,11 +20,8 @@
   }
 
   function init() {
-    var saved = localStorage.getItem(STORAGE_KEY);
-    if (saved && pages[saved]) {
-      window.location.replace(pages[saved]);
-      return;
-    }
+    // Always show the gate at the root URL — never auto-redirect returning visitors
+    localStorage.removeItem(STORAGE_KEY);
 
     document.querySelectorAll('.gate-panel').forEach(function (panel) {
       var audience = panel.dataset.audience;

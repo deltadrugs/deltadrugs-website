@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/gate.css">
-  <script>(function(){document.documentElement.lang=localStorage.getItem('deltaLanguage')||'en';})();</script>
+  <script>(function(){localStorage.removeItem('deltaAudience');document.documentElement.lang=localStorage.getItem('deltaLanguage')||'en';})();</script>
 </head>
 <body>
   <div id="gate" class="gate">
