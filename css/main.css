@@ -345,6 +345,15 @@ h3 { font-size: 1.25rem; }
   margin-bottom: 0;
 }
 
+.hero-bright__support {
+  margin: 0.75rem 0 0;
+  color: var(--gray-muted);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  line-height: 1.5;
+  max-width: 36rem;
+}
+
 .hero-bright__promise {
   position: relative;
   margin: 1.25rem 0 1.25rem;

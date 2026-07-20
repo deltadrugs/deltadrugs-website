@@ -241,6 +241,7 @@
       partner_form_success: 'Thank you! Our partnership team will contact you shortly.',
 
       enteral_hero_title: 'Enteral & Clinical Nutrition — Delivered to Your Door',
+      enteral_hero_support: 'Carrying Kate Farms, Nestlé Health Science, Nutricia, and more — Medi-Cal approved and delivered to your door.',
       enteral_hero_sub: 'Zero Paperwork. Zero Delivery Fees. Covered by Medi-Cal.',
       enteral_hero_tag: 'California\'s dedicated enteral nutrition supplier since 1998',
       enteral_cta: 'Get Started — Call (818) 309-2884',
