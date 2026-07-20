@@ -1147,24 +1147,6 @@ h3 { font-size: 1.25rem; }
   stroke: var(--orange);
 }
 
-/* Brand pills */
-.brand-pills {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.75rem;
-}
-
-.brand-pill {
-  background: var(--orange-light);
-  color: #F58326;
-  font-weight: 800;
-  font-size: 0.875rem;
-  padding: 0.55rem 1.15rem;
-  border-radius: 999px;
-  border: 1px solid rgba(245, 131, 38, 0.25);
-}
-
 /* FAQ accordion */
 .faq-list {
   display: flex;
@@ -1405,21 +1387,6 @@ h3 { font-size: 1.25rem; }
 .spec-cat-card__note--muted {
   color: var(--gray-muted);
   font-style: italic;
-}
-
-.brand-pills--large .brand-pill {
-  font-size: 1rem;
-  padding: 0.7rem 1.35rem;
-  background: var(--white);
-  border: 1.5px solid rgba(245, 131, 38, 0.45);
-  color: var(--olive-text);
-}
-
-.brand-pills__sub {
-  text-align: center;
-  color: var(--gray-muted);
-  margin: 1.5rem 0 0;
-  font-size: 0.9375rem;
 }
 
 .spec-callback {
