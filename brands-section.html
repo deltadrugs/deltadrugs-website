@@ -1,0 +1,190 @@
+<!-- ============================================================
+     DELTA DRUGS — "BRANDS WE CARRY" SECTION
+     Paste this section into enteral-nutrition.html (and optionally
+     specialty-nutrition.html). Logo files go in images/logos/
+     ============================================================ -->
+
+<style>
+  .brands-section {
+    background: #F5F5F5;
+    padding: 90px 24px;
+    font-family: 'Nunito', sans-serif;
+  }
+  .brands-section .brands-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .brands-section .brands-eyebrow {
+    display: inline-block;
+    color: #F58326;
+    font-weight: 800;
+    font-size: 14px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  .brands-section h2 {
+    color: #757561;
+    font-weight: 900;
+    font-size: 42px;
+    margin: 0 0 16px;
+    line-height: 1.15;
+  }
+  .brands-section .brands-sub {
+    color: #949384;
+    font-weight: 500;
+    font-size: 18px;
+    max-width: 640px;
+    margin: 0 auto 56px;
+    line-height: 1.6;
+  }
+
+  /* ── Featured tier: Kate Farms + Nestlé ── */
+  .brands-featured {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    margin-bottom: 28px;
+  }
+  .brand-card {
+    background: #FFFFFF;
+    border-radius: 16px;
+    border: 2px solid transparent;
+    box-shadow: 0 4px 18px rgba(117, 117, 97, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+  }
+  .brand-card:hover {
+    transform: translateY(-5px);
+    border-color: #F58326;
+    box-shadow: 0 12px 28px rgba(117, 117, 97, 0.15);
+  }
+  .brand-card--featured {
+    position: relative;
+    flex-direction: column;
+    padding: 48px 32px 40px;
+    border-top: 5px solid #F58326;
+  }
+  .brand-card--featured img {
+    max-width: 320px;
+    width: 100%;
+    height: auto;
+    max-height: 110px;
+    object-fit: contain;
+  }
+  .brand-badge {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    background: #FFF3E8;
+    color: #F58326;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border-radius: 999px;
+  }
+  .brand-note {
+    margin-top: 22px;
+    color: #949384;
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  /* ── Standard tier: everyone else ── */
+  .brands-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+  }
+  .brand-card--standard {
+    padding: 28px 20px;
+    min-height: 110px;
+  }
+  .brand-card--standard img {
+    max-width: 150px;
+    width: 100%;
+    height: auto;
+    max-height: 60px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.65;
+    transition: filter 0.25s ease, opacity 0.25s ease;
+  }
+  .brand-card--standard:hover img {
+    filter: grayscale(0%);
+    opacity: 1;
+  }
+
+  .brands-footnote {
+    margin-top: 40px;
+    color: #949384;
+    font-weight: 500;
+    font-size: 15px;
+  }
+  .brands-footnote strong { color: #757561; }
+
+  /* ── Responsive ── */
+  @media (max-width: 900px) {
+    .brands-section h2 { font-size: 32px; }
+    .brands-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+  @media (max-width: 640px) {
+    .brands-section { padding: 64px 18px; }
+    .brands-featured { grid-template-columns: 1fr; gap: 18px; }
+    .brands-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+    .brand-card--featured { padding: 36px 24px 32px; }
+  }
+</style>
+
+<section class="brands-section">
+  <div class="brands-container">
+    <span class="brands-eyebrow">Our Manufacturer Partners</span>
+    <h2>The Brands We Carry</h2>
+    <p class="brands-sub">
+      Every formula we supply comes directly from a trusted, Medi-Cal approved
+      manufacturer — stocked, in date, and ready for same-day or next-day delivery.
+    </p>
+
+    <!-- Featured partners -->
+    <div class="brands-featured">
+      <div class="brand-card brand-card--featured">
+        <span class="brand-badge">California Brand</span>
+        <img src="images/logos/kate-farms.png" alt="Kate Farms — plant-based enteral nutrition formulas">
+        <p class="brand-note">Plant-based formulas, proudly made in California</p>
+      </div>
+      <div class="brand-card brand-card--featured">
+        <img src="images/logos/nestle-health-science.png" alt="Nestlé Health Science — Peptamen, Nutren, Compleat and Boost formulas">
+        <p class="brand-note">Peptamen&reg;, Nutren&reg;, Compleat&reg; &amp; Boost&reg;</p>
+      </div>
+    </div>
+
+    <!-- Full library -->
+    <div class="brands-grid">
+      <div class="brand-card brand-card--standard">
+        <img src="images/logos/nutricia.jpg" alt="Nutricia — Neocate and specialty medical nutrition">
+      </div>
+      <div class="brand-card brand-card--standard">
+        <img src="images/logos/cambrooke.png" alt="Ajinomoto Cambrooke — metabolic nutrition">
+      </div>
+      <div class="brand-card brand-card--standard">
+        <img src="images/logos/vitaflo.png" alt="Vitaflo — specialized metabolic and disease-specific nutrition">
+      </div>
+      <div class="brand-card brand-card--standard">
+        <img src="images/logos/functional-formularies.jpg" alt="Functional Formularies — organic whole-food enteral nutrition">
+      </div>
+      <div class="brand-card brand-card--standard">
+        <img src="images/logos/global-health-products.png" alt="Global Health Products — nutritional supplements">
+      </div>
+    </div>
+
+    <p class="brands-footnote">
+      Don't see the formula you need? <strong>Call (818) 309-2884</strong> — if it's
+      Medi-Cal approved, we can source it.
+    </p>
+  </div>
+</section>
