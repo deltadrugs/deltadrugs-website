@@ -349,7 +349,7 @@
   window.DeltaSiteBoot = boot;
 
   window.loadSitePartials = function (headerPartial) {
-    headerPartial = headerPartial || 'partials/header-main.html';
+    headerPartial = headerPartial || 'partials/header-patient.html';
     var tasks = [];
 
     var widgets = document.getElementById('global-widgets');
@@ -372,6 +372,13 @@
     if (header) {
       tasks.push(fetch(headerPartial).then(function (r) { return r.text(); }).then(function (h) {
         header.innerHTML = h;
+      }));
+    }
+
+    var audience = document.getElementById('audience-switcher');
+    if (audience) {
+      tasks.push(fetch('partials/audience-switcher.html').then(function (r) { return r.text(); }).then(function (h) {
+        audience.innerHTML = h;
       }));
     }
 
