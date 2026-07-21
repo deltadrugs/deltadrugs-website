@@ -1574,6 +1574,10 @@ h3 { font-size: 1.25rem; }
   opacity: 0.65;
   transition: filter 0.25s ease, opacity 0.25s ease;
 }
+.brand-card--standard img.logo-boost {
+  max-width: 195px;
+  max-height: 80px;
+}
 .brand-card--standard:hover img {
   filter: grayscale(0%);
   opacity: 1;
