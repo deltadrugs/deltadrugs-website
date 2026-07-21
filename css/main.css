@@ -1475,7 +1475,6 @@ h3 { font-size: 1.25rem; }
 
 @media (max-width: 600px) {
   .spec-cat-grid { grid-template-columns: 1fr; }
-  .hero-coming-soon { min-height: 220px; }
   .hero-coming-soon p { font-size: 1.4rem; }
 }
 
@@ -2026,6 +2025,7 @@ h3 { font-size: 1.25rem; }
 @media (max-width: 900px) {
   .hero-bright__grid { grid-template-columns: 1fr; }
   .hero-bright__visual { order: -1; }
+  .hero-bright__visual:has(.hero-coming-soon) { order: 0; }
   .hero-bright__promise { font-size: 1.1rem; }
   .trust-bar__grid { grid-template-columns: 1fr 1fr; }
   .about-grid, .services-grid, .refer-options, .flip-grid, .flip-grid--5 { grid-template-columns: 1fr; }
