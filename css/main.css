@@ -214,14 +214,14 @@ h3 { font-size: 1.25rem; }
 
 .main-nav--patient > ul > li > a {
   display: inline-block;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.3;
   white-space: nowrap;
   color: #757561;
   background: transparent;
   border: 1px solid rgba(245, 131, 38, 0.2);
   border-radius: 20px;
-  padding: 5px 12px;
+  padding: 0.5rem 1.1rem;
   box-shadow: 0 0 0 rgba(245, 131, 38, 0);
   transition: color 0.3s ease, border-color 0.3s ease, border-width 0.3s ease, box-shadow 0.3s ease;
 }
@@ -1002,11 +1002,16 @@ h3 { font-size: 1.25rem; }
 }
 
 .service-card {
+  position: relative;
   background: var(--white);
   border: 1px solid var(--gray-border);
   border-radius: var(--radius);
   padding: 2rem 1.5rem;
   transition: all var(--transition);
+}
+
+.service-card:has(.service-card__link) {
+  cursor: pointer;
 }
 
 .service-card:hover {
@@ -1039,6 +1044,12 @@ h3 { font-size: 1.25rem; }
 .service-card__link {
   font-weight: 700;
   font-size: 0.875rem;
+}
+
+.service-card .service-card__link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
 }
 
 /* Insurance */
