@@ -1306,7 +1306,7 @@ h3 { font-size: 1.25rem; }
   display: block;
 }
 
-/* Square hero crossfade (2 images · ~5s each · gentle blend) */
+/* Square hero crossfade (shared: 6s display + 1.5s crossfade) */
 .hero-coming-soon--slideshow {
   padding: 0;
 }
@@ -1323,7 +1323,7 @@ h3 { font-size: 1.25rem; }
   justify-self: stretch;
   align-self: stretch;
   opacity: 0;
-  animation-duration: 10s;
+  animation-duration: 15s; /* 2 images × 7.5s */
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   -webkit-mask-image: none;
@@ -1339,20 +1339,55 @@ h3 { font-size: 1.25rem; }
 }
 
 @keyframes hero-square-fade-1 {
-  0%, 45% { opacity: 1; }
-  50%, 95% { opacity: 0; }
+  0%, 40% { opacity: 1; }
+  50%, 90% { opacity: 0; }
   100% { opacity: 1; }
 }
 
 @keyframes hero-square-fade-2 {
-  0%, 45% { opacity: 0; }
-  50%, 95% { opacity: 1; }
+  0%, 40% { opacity: 0; }
+  50%, 90% { opacity: 1; }
   100% { opacity: 0; }
 }
 
-/* Square hero crossfade (4 images · ~5s each · gentle blend) */
+/* 3 images · 22.5s cycle */
+.hero-coming-soon--slideshow-3 .hero-slideshow__img {
+  animation-duration: 22.5s;
+}
+
+.hero-coming-soon--slideshow-3 .hero-slideshow__img:nth-child(1) {
+  animation-name: hero-square-fade-3-1;
+}
+
+.hero-coming-soon--slideshow-3 .hero-slideshow__img:nth-child(2) {
+  animation-name: hero-square-fade-3-2;
+}
+
+.hero-coming-soon--slideshow-3 .hero-slideshow__img:nth-child(3) {
+  animation-name: hero-square-fade-3-3;
+}
+
+@keyframes hero-square-fade-3-1 {
+  0%, 26.67% { opacity: 1; }
+  33.33%, 93.33% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes hero-square-fade-3-2 {
+  0%, 26.67% { opacity: 0; }
+  33.33%, 60% { opacity: 1; }
+  66.67%, 100% { opacity: 0; }
+}
+
+@keyframes hero-square-fade-3-3 {
+  0%, 60% { opacity: 0; }
+  66.67%, 93.33% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* 4 images · 30s cycle */
 .hero-coming-soon--slideshow-4 .hero-slideshow__img {
-  animation-duration: 20s;
+  animation-duration: 30s;
 }
 
 .hero-coming-soon--slideshow-4 .hero-slideshow__img:nth-child(1) {
@@ -1372,26 +1407,26 @@ h3 { font-size: 1.25rem; }
 }
 
 @keyframes hero-square-fade-4-1 {
-  0%, 22.5% { opacity: 1; }
-  25%, 97.5% { opacity: 0; }
+  0%, 20% { opacity: 1; }
+  25%, 95% { opacity: 0; }
   100% { opacity: 1; }
 }
 
 @keyframes hero-square-fade-4-2 {
-  0%, 22.5% { opacity: 0; }
-  25%, 47.5% { opacity: 1; }
+  0%, 20% { opacity: 0; }
+  25%, 45% { opacity: 1; }
   50%, 100% { opacity: 0; }
 }
 
 @keyframes hero-square-fade-4-3 {
-  0%, 47.5% { opacity: 0; }
-  50%, 72.5% { opacity: 1; }
+  0%, 45% { opacity: 0; }
+  50%, 70% { opacity: 1; }
   75%, 100% { opacity: 0; }
 }
 
 @keyframes hero-square-fade-4-4 {
-  0%, 72.5% { opacity: 0; }
-  75%, 97.5% { opacity: 1; }
+  0%, 70% { opacity: 0; }
+  75%, 95% { opacity: 1; }
   100% { opacity: 0; }
 }
 
